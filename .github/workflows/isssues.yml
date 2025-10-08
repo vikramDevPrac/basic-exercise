@@ -1,0 +1,9 @@
+name: Issue workflow
+on: 
+  issues: types:[opened, edited]
+jobs:
+  output-info:
+    runs-on:
+    steps:
+      - name: Output the event details
+        run: echo "${{ toJson(github.event)  }}"
