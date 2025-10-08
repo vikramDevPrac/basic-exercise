@@ -1,6 +1,5 @@
 name: Issue workflow
-on: 
-  issues: types:[opened, edited]
+on: issues
 jobs:
   output-info:
     runs-on:
